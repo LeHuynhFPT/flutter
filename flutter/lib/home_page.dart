@@ -1,4 +1,6 @@
+
 import 'package:flutter/material.dart';
+
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
 
@@ -10,68 +12,252 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
 
-    double padding = 10;
+    double margin = 10;
     return Container(
+
       color: Colors.white,
       child: SafeArea(
-          child: Scaffold(
-            body: Column(
-              children: [
-                Expanded(
-                  flex: 1,
-                  child: Container(
-                    color: Colors.green,
-                    height: 200,
-                    child: Column(
-                      children: [
-                        Expanded(
-                            child: Container(
-                              color: Colors.blueAccent,
-                              height: 50,
-                            ),
-                        ),
-                        Container(
-                          color: Colors.blue,
-                          height: 100,
-                        )
-                      ],
-                    ),
-                  ),
-                ),
-                SizedBox(width: padding,),
-                Expanded(
-                  flex: 1,
-                  child: Container(
-                    color: Colors.orange,
-                    height: 100,
-                    child: Icon(
-                      Icons.book,
-                      color: Colors.white,
-                    ),
-                  ),
-                ),
-                Expanded(
-                  flex: 1,
-                  child: Container(
+        child: Scaffold(
+          body: Column(
+            children: [
+              Expanded(
+                flex: 3,
+                child: Container(
+                  color: Colors.white,
+                  child: Row(
+                    children: [
+                      Expanded(
+                        flex: 1,
+                        child: Container(
 
-                    height: 100,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.only(
-                          topRight: Radius.circular(20),
-                          bottomLeft: Radius.circular(40)
+
+                          child: Column(
+                            children: [
+                              Expanded(
+                                flex :1,
+                                  child: Container(
+                                    color: Colors.green,
+                                    width: 195,
+                                    child: Icon(
+                                      Icons.add,
+                                      color: Colors.white,
+                                    ),
+
+
+
+                                  ),
+                              ),SizedBox(height: margin,),
+
+                              Expanded(
+                                flex :1,
+                                child: Container(
+                                  color: Colors.orange,
+                                  width: 195,
+                                  child: Icon(
+                                    Icons.abc,
+                                    color: Colors.white,
+
+                                  ),
+
+
+
+
+                                ),
+                              ),
+                            ],
+                          ),
+
+
                       ),
-                      color: Colors.green,
-                    ),
+                      ),SizedBox(width: margin,),
+                      Expanded(
+                        flex: 1,
+                        child: Container(
+
+                          child: Column(
+                            children: [
+                              Expanded(
+                                flex: 1,
+                                  child: Container(
+                                    color: Colors.blueAccent,
+                                    width: 200,
+                                    child: Icon(
+                                      Icons.wifi,
+                                      color: Colors.white,
+
+                                    ),
+
+                                  ),
+                              ),SizedBox(height: margin,),
+                              Expanded(
+                                flex: 3,
+                                child: Container(
+                                  color: Colors.white,
+                                  child: Row(
+                                    children: [
+                                      Expanded(
+                                        flex:1,
+                                        child: Container(
+                                          color: Colors.white,
+                                          child: Column(
+                                            children: [
+                                              Expanded(
+                                                flex: 3,
+                                                  child: Container(
+                                                    color: Colors.yellowAccent,
+                                                    width: 100,
+                                                    child: Icon(
+                                                      Icons.bluetooth,
+                                                      color: Colors.white,
+
+                                                    ),
+
+                                                  ),
+                                              ),SizedBox(height: margin,),
+                                              Expanded(
+                                                flex: 1,
+                                                child: Container(
+                                                  color: Colors.redAccent,
+                                                  width: 100,
+                                                  child: Icon(
+                                                    Icons.next_plan,
+                                                    color: Colors.white,
+
+
+                                                  ),
+
+                                                ),
+                                              ),
+                                            ],
+                                          ),
+
+                                      ),
+                                      ),SizedBox(width: margin,),
+                                      Expanded(
+                                        flex:1,
+                                        child: Container(
+                                          color: Colors.white,
+                                          child: Column(
+                                            children: [
+                                              Expanded(
+                                                flex: 1,
+                                                child: Container(
+                                                  color: Colors.grey,
+                                                  width: 100,
+                                                  child: Icon(
+                                                    Icons.accessible,
+                                                    color: Colors.white,
+
+                                                  ),
+
+
+                                              ),
+                                              ),SizedBox(height: margin,),
+                                              Expanded(
+                                                flex: 3,
+                                                child: Container(
+                                                  color: Colors.blue,
+                                                  width: 100,
+                                                  child: Icon(
+                                                    Icons.account_tree,
+                                                    color: Colors.white,
+
+                                                  ),
+
+
+                                                ),
+                                              ),
+                                            ],
+                                          ),
+
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+
+
+                                ),
+                              ),
+                            ],
+                          ),
+
+
+                        ),
+                      ),
+                    ],
                   ),
+
+
+
+
+              ),
+              ),SizedBox(height: margin,),
+              Expanded(
+                flex: 1,
+                child: Container(
+                  color: Colors.white,
+                  child: Row(
+                    children: [
+                      Expanded(
+                        flex: 3,
+                        child: Container(
+                          color: Colors.red,
+                          height: 150,
+                          child: Icon(
+                            Icons.book,
+                            color: Colors.white,
+                          ),
+
+                      ),
+                      ),const SizedBox(width: 10, ),
+
+                      Expanded(
+                        flex: 1,
+                        child: Container(
+                          color: Colors.green,
+                          height: 150,
+
+                          child: Icon(
+                            Icons.book,
+                            color: Colors.white,
+
+                          ),
+
+                        ),
+                      ),
+                    ],
+
+                  ),
+
+
                 ),
-                SizedBox(width: padding,),
+              ),
+              SizedBox(height: margin,),
+              Expanded(
+                flex: 1,
+                child: Container(
+                  color: Colors.blue,
+                  width: 400,
+                  child: Icon(
+                    Icons.radio,
+                    color: Colors.white,
 
-              ],
-            ),
-          )
+                  ),
+
+
+
+                ),
+              ),SizedBox(height: margin,),
+            ],
+
+          ),
+
+
+        ),
+
       ),
-    );
 
+    );
 
   }
 }
